@@ -1,9 +1,9 @@
-import Greeting from "./Components/Greeting";
-import UserCard from "./Components/UserCard";
-import Weather from "./Components/Weather";
-import Counter from "./Components/Counter";
-import TaskList from "./Components/TaskList";
-import Button from "./Components/Button";
+import Greeting from "../Components/Greeting";
+import UserCard from "../Components/UserCard";
+import Weather from "../Components/Weather";
+import Counter from "../Components/Counter";
+import TaskList from "../Components/TaskList";
+import Button from "../Components/Button";
 
 
 export default function Home() {
