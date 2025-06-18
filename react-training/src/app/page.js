@@ -1,34 +1,20 @@
-import Greeting from "../Components/Greeting";
-import UserCard from "../Components/UserCard";
-import Weather from "../Components/Weather";
-import Counter from "../Components/Counter";
-import TaskList from "../Components/TaskList";
-import Button from "../Components/Button";
-
+'use client'
+import { useRouter } from "next/navigation";
 
 export default function Home() {
 
-  let list=["Hello","This","Is","The","Array"];
+  const router = useRouter();
+
   return (
-    
-  <div>
-    <h3>Day-1</h3>
-    <Greeting /> 
+  <>
+    <h1>HomePage</h1>
 
-    <UserCard name="Divyanshu" email="abc@gmail.com" image="./trial.png" />
+    <h3>Here are the link to all the questions according to Day</h3>
 
-    <Weather temp= {26} ></Weather>
-    <Weather temp= {9} ></Weather>
-    <Weather temp= {20} ></Weather>
-
-    <Counter></Counter>
-
-    <TaskList list= {list}></TaskList>
-
-    <Button text="Hello" color="red"></Button>
-
-  </div>
-   
+    <button onClick={()=> router.push('/Day1')}>To Day-1</button><br/><br/>
+  
+  </>
+ 
 
   );
 
