@@ -11,7 +11,7 @@ export default function Day1(){
     
   <>
 
-    <h1>Buttons for each Question</h1>
+    <h1>Links to Questions </h1>
 
     <button onClick={() => router.push('/Day1/Question1')}>To Question-1</button><br/><br/>
     <button onClick={() => router.push('/Day1/Question2')}>To Question-2</button><br/><br/>

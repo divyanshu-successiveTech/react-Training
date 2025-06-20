@@ -1,7 +1,7 @@
 'use client'
 import { useRouter } from "next/navigation";
 
-export default function Home() {
+export default function Dashboard() {
 
   const router = useRouter();
 
@@ -12,7 +12,6 @@ export default function Home() {
     <h3>Here are the link to all the questions according to Day</h3>
 
     <button onClick={()=> router.push('/Day1')}>To Day-1</button><br/><br/>
-    <button onClick={()=> router.push('/Day2')}>To Day-2</button><br/><br/>
   
   </>
  
