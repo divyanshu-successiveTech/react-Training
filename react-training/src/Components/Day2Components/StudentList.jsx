@@ -4,27 +4,23 @@ import { useMemo, useState } from "react";
 
 export const StudentList=()=>{
 
-    const [names,setNames] = useState(['a','b','c','d']);
+    let list=['a','b','c','d'];
 
-    const display = useMemo(()=>names.map((item)=>item),[names]);
-
-
-    const addStudent = (val)=>{
-        setNames(names.push(val));
-    }
-
-    // let input = document.getElementById('curr').value
+    const [names,setNames] = useState([]);
     const [student,setStudent] = useState("")
 
-
+    list= useMemo(()=>{
+        return [...list,...names]
+    },[names]);
 
     return (
         <>
-        {display}<br></br>
-        Enter name<br></br>
-        <input type="text" id ='curr' placeholder="Enter a name" ></input>
+        <ul>
+        {list.map((item)=>{return<li>{item}</li>})}<br></br>
+        </ul>
         
-        <button onClick={(input)=>addStudent(input)}>Add</button>
+        <input id="input" value={student} onChange={(e)=>setStudent(e.target.value)} placeholder="Enter new Student name"></input>
+        <button onClick={()=>setNames([...names,student])}>Add</button>
         </>
     )
 

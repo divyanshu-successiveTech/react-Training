@@ -14,6 +14,9 @@ import { LanguageButton } from "@/Components/Day2Components/LanguageButton"
 import ChangeCount from "@/Components/Day2Components/ChangeCount"
 import CompleteTasks from "@/Components/Day2Components/CompleteTasks"
 import { StudentList } from "@/Components/Day2Components/StudentList"
+import EmployeeSalary from "@/Components/Day2Components/EmployeeSalary"
+import Copied from "@/Components/Clipboard/Copied"
+import { Local } from "@/Components/LocalStorage/app"
 
 export default function Day2(){
 
@@ -44,7 +47,13 @@ export default function Day2(){
 
         {/* <CompleteTasks></CompleteTasks> */}
 
-        <StudentList></StudentList>
+        {/* <StudentList></StudentList> */}
+        {/* <EmployeeSalary></EmployeeSalary> */}
+
+
+        {/* <Copied></Copied> */}
+
+        <Local></Local>
 
         </>
 
