@@ -4,10 +4,10 @@ import { useState } from "react";
 
 export const Local=()=>{
 
-    let [val,setVal]= useState('');
-    let [key,setKey]=useState('');
+    const [val,setVal]= useState('');
+    const [key,setKey]=useState('');
 
-    let[getter,setter,remove]=useLocalStorage();
+    const {setter,getter,remove}=useLocalStorage();
 
 
     return(
@@ -28,7 +28,7 @@ export const Local=()=>{
 
         <button onClick={()=>{setVal(getter(key))}}>Get</button>
         
-        <button onClick={()=>{remove(val)}}>Remove value</button>
+        <button onClick={()=>{remove(key)}}>Remove value</button>
         
         
         

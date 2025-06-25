@@ -8,25 +8,48 @@ function AddToList({curr}){
 
 export default function ToDoList(){
 
-    let [Todo,setTodo] = useState([]);
+    let [Todo,setTodo] = useState([
+    { id: 1, task: "task1", complete: false },
+    { id: 2, task: "task2", complete: false },
+    { id: 3, task: "task3", complete: false }
+  ]);
+    let [inputVal,setInputVal] = useState('');
 
-    let item = document.getElementById("ele");
+    const handleTodo=()=>{
+       const newTodo={    
+            id : Date.now(),
+            task : inputVal,
+            complete : false,
+        }
+        setTodo([...Todo,newTodo]);
+        
+    }
 
-    // let arr = Todo.map((ele)=> < AddToList curr = {ele} />)
+    const deleteTask =(id)=>{
+        const arr = Todo.filter((curr)=>{return id !== curr.id});
+        setTodo([...arr])
+
+    }
 
     return(
     <>        
        
-        <input type="text" id="ele" placeholder="Enter element for todos"></input>
-        <button onClick={()=>{
-            setTodo([...Todo,< AddToList curr = {item.value} />]);
-        }}>Add Todos</button>
+        <input type="text"  placeholder="Enter element for todos" onChange={(e)=>{setInputVal(e.target.value)}} />
+        
+        <button onClick={handleTodo}>Add</button>
+
+        <ul>
+        {Todo.map((current)=><li key={current.id}><input type="checkbox" onChange={()=>{current.complete=true}} ></input>{current.task}
+        <button onClick={()=>{deleteTask(current.id)}}>Delete</button>
+        </li>)}
+        
+        </ul>
 
 
-        <div><ol>{Todo}</ol></div>
-         
+    </>
     
-    </> )
+
+    )
 
 
 

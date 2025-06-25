@@ -1,6 +1,7 @@
 const useLocalStorage = () =>{
+
     const setter =(key,value)=>{
-        localStorage.setItem(`${key}`,value);
+        localStorage.setItem(`${key}`,`${value}`);
     }
 
     const getter = (value)=>{
@@ -10,10 +11,10 @@ const useLocalStorage = () =>{
     }
 
     const remove = (value)=>{
-        localStorage.removeItem(`${value}`)
+        localStorage.removeItem(value)
     }
 
-    return [setter,getter,remove];
+    return {setter,getter,remove};
 }
 
 export default useLocalStorage;
