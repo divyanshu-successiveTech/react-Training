@@ -1,3 +1,10 @@
+// 4.Enhance the previous application by adding protected pages that require authentication.
+// Create a login page with a form that accepts a username and password.
+// Implement authentication logic (e.g., hardcode a username and password for now).
+// Secure the About page so that it can only be accessed by authenticated users.
+// Redirect unauthenticated users to the login page.
+// Display a message on the Home page welcoming the authenticated user.
+
 
 import { LoginComponent } from "@/Components/Day3Components/LoginComponent";
 import {  ValidationProvider } from "@/Components/Day3Components/ValidationContext";
