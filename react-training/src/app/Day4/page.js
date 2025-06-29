@@ -15,7 +15,10 @@ function Day4(){
         <button onClick={()=>router.push('/Day4/Question6')}>To Question6</button><br/><br/>
         <button onClick={()=>router.push('/Day4/Question7')}>To Question7</button><br/><br/>
         <button onClick={()=>router.push('/Day4/Question8')}>To Question8</button><br/><br/>
-
+        <button onClick={()=>router.push('/Day4/Question10')}>To Question10</button><br/><br/>
+        <button onClick={()=>router.push('/Day4/Question11')}>To Question11</button><br/><br/>
+        <button onClick={()=>router.push('/Day4/Question12')}>To Question12</button><br/><br/>
+        <button onClick={()=>router.push('/Day4/Question14')}>To Question14</button><br/><br/>
 
         </>
     )
