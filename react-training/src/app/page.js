@@ -15,6 +15,7 @@ export default function Home() {
     <button onClick={()=> router.push('/Day2')}>To Day-2</button><br/><br/>
     <button onClick={()=> router.push('/Day3')}>To Day-3</button><br/><br/>
     <button onClick={()=> router.push('/Day4')}>To Day-4</button><br/><br/>
+    <button onClick={()=> router.push('/Day5')}>To Day-5</button><br/><br/>
   
   </>
  
