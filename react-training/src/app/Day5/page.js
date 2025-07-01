@@ -7,6 +7,17 @@ function Day5(){
     return(
         <>
         <button onClick={()=>router.push('/Day5/Question1')}>To Question1</button><br/><br/>
+        <button onClick={()=>router.push('/Day5/Question2')}>To Question2</button><br/><br/>
+        <button onClick={()=>router.push('/Day5/Question3')}>To Question3</button><br/><br/>
+        <button onClick={()=>router.push('/Day5/Question4')}>To Question4</button><br/><br/>
+        <button onClick={()=>router.push('/Day5/Question5')}>To Question5</button><br/><br/>
+        <button onClick={()=>router.push('/Day5/Question6')}>To Question6</button><br/><br/>
+        <button onClick={()=>router.push('/Day5/Question7')}>To Question7</button><br/><br/>
+        <button onClick={()=>router.push('/Day5/Question12')}>To Question12</button><br/><br/>
+        <button onClick={()=>router.push('/Day5/Question13')}>To Question13</button><br/><br/>
+        <button onClick={()=>router.push('/Day5/Question14')}>To Question14</button><br/><br/>
+        <button onClick={()=>router.push('/Day5/Question15')}>To Question15</button><br/><br/>
+        <button onClick={()=>router.push('/Day5/Question16')}>To Question16</button><br/><br/>
         </>
     )
 }
