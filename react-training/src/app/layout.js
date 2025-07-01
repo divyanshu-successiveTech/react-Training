@@ -3,6 +3,9 @@ import "./globals.css";
 import { ThemeProvider } from "@/Components/Day2Components/ThemeContext";
 import { LanguageProvider } from "@/Components/Day2Components/LanguageContext";
 import { ShoppingCartProvider } from "@/Components/Day2Components/ShoppingCartContext";
+import { ParentProvider } from "@/Components/Day3Components/ParentContext";
+import { LightLoginProvider } from "@/Components/Day3Components/LightLoginContext";
+import {  ValidationProvider } from "@/Components/Day3Components/ValidationContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,7 +28,17 @@ export default function RootLayout({ children }) {
       <body>
         <ThemeProvider>
           <LanguageProvider>
-            <ShoppingCartProvider>{children}</ShoppingCartProvider>
+            <ShoppingCartProvider>
+
+              <LightLoginProvider>
+
+                <ValidationProvider>
+                   {children}
+                </ValidationProvider>
+                 
+               </LightLoginProvider>
+          
+              </ShoppingCartProvider>
           </LanguageProvider>
         </ThemeProvider>
       </body>
