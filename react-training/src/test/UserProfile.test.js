@@ -1,3 +1,6 @@
+// 4.Implement a UserProfile component that displays a user's name, email,
+//  and phone number using props. Write tests using React Testing Library to ensure the component correctly renders the provided user data.
+
 import UserProfile from "@/Components/Day6Components/UserProfile";
 import { render, screen } from '@testing-library/react';
 

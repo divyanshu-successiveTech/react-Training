@@ -1,3 +1,8 @@
+// 2.Create a Counter component that shows a number with increment and decrement buttons.
+//  Write tests using React Testing Library to verify that the counter updates correctly on button clicks.
+
+
+
 import CounterOne from "@/Components/Day6Components/CounterOne";
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
