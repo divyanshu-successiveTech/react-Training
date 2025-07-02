@@ -22,8 +22,8 @@ describe('CounterOne Component', () => {
     const incrementButton = screen.getByText('Increment');
     const decrementButton = screen.getByText('Decrement');
 
-    await userEvent.click(incrementButton); // count: 1
-    await userEvent.click(decrementButton); // count: 0
+    await userEvent.click(incrementButton); 
+    await userEvent.click(decrementButton); 
 
     expect(screen.getByText('0')).toBeInTheDocument();
   });
@@ -33,11 +33,11 @@ describe('CounterOne Component', () => {
     const incrementButton = screen.getByText('Increment');
     const decrementButton = screen.getByText('Decrement');
 
-    await userEvent.click(incrementButton); // 1
-    await userEvent.click(incrementButton); // 2
-    await userEvent.click(incrementButton); // 3
-    await userEvent.click(decrementButton); // 2
-    await userEvent.click(decrementButton); // 1
+    await userEvent.click(incrementButton); 
+    await userEvent.click(incrementButton); 
+    await userEvent.click(incrementButton); 
+    await userEvent.click(decrementButton); 
+    await userEvent.click(decrementButton); 
 
     expect(screen.getByText('1')).toBeInTheDocument();
   });

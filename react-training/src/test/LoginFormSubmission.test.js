@@ -31,15 +31,15 @@ describe('LoginFormSubmission Component', () => {
     const passwordInput = screen.getByPlaceholderText('Enter Password');
     const submitButton = screen.getByRole('button', { name: /submit/i });
 
-    await userEvent.type(usernameInput, 'john');
-    await userEvent.type(passwordInput, 'doe123');
+    await userEvent.type(usernameInput, 'ABC');
+    await userEvent.type(passwordInput, '123');
 
     await userEvent.click(submitButton);
 
-    expect(consoleSpy).toHaveBeenCalledWith('john', 'doe123');
+    expect(consoleSpy).toHaveBeenCalledWith('ABC', '123');
     expect(usernameInput).toHaveValue('');
     expect(passwordInput).toHaveValue('');
 
-    consoleSpy.mockRestore(); // clean up
+    consoleSpy.mockRestore(); 
   });
 });
