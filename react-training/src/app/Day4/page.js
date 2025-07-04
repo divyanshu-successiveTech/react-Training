@@ -7,7 +7,7 @@ function Day4(){
 
     return(
         <>
-        <button onClick={()=>router.push('/Day4/Question1')}>To Question1</button><br/><br/>
+        {/* <button onClick={()=>router.push('/Day4/Question1')}>To Question1</button><br/><br/>
         <button onClick={()=>router.push('/Day4/Question2')}>To Question2</button><br/><br/>
         <button onClick={()=>router.push('/Day4/Question3')}>To Question3</button><br/><br/>
         <button onClick={()=>router.push('/Day4/Question4')}>To Question4</button><br/><br/>
@@ -18,7 +18,10 @@ function Day4(){
         <button onClick={()=>router.push('/Day4/Question10')}>To Question10</button><br/><br/>
         <button onClick={()=>router.push('/Day4/Question11')}>To Question11</button><br/><br/>
         <button onClick={()=>router.push('/Day4/Question12')}>To Question12</button><br/><br/>
-        <button onClick={()=>router.push('/Day4/Question14')}>To Question14</button><br/><br/>
+        <button onClick={()=>router.push('/Day4/Question14')}>To Question14</button><br/><br/> */}
+
+
+        Welcome to DAY 4 QUESTIONS
 
         </>
     )

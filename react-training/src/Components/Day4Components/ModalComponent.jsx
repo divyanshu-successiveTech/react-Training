@@ -20,7 +20,7 @@ export default function ModalComponent() {
 
   const handleSubmit = () => {
 
-    handleClose();
+    Close();
   };
 
   return (
@@ -46,7 +46,7 @@ export default function ModalComponent() {
         </DialogContent>
 
         <DialogActions>
-          <Button onClick={handleClose}>Cancel</Button>
+          <Button onClick={Close}>Cancel</Button>
           <Button variant="contained" onClick={handleSubmit}>
             Submit
           </Button>
