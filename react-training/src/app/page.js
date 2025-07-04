@@ -13,14 +13,19 @@ export default function Home() {
 
     <button onClick={()=> router.push('/Day1')}>To Day-1</button><br/><br/>
     <button onClick={()=> router.push('/Day2')}>To Day-2</button><br/><br/>
-<<<<<<< HEAD
+
     <button onClick={()=> router.push('/Day3')}>To Day-3</button><br/><br/>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <button onClick={()=> router.push('/Day4')}>To Day-4</button><br/><br/>
     <button onClick={()=> router.push('/Day5')}>To Day-5</button><br/><br/>
 =======
 =======
 >>>>>>> develop
+>>>>>>> develop
+=======
+    <button onClick={()=> router.push('/Day4')}>To Day-4</button><br/><br/>
+
 >>>>>>> develop
   
   </>

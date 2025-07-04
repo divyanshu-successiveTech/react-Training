@@ -24,13 +24,12 @@ const users = [
 export default function SimpleTable() {
   const [sortedAsc, setSortedAsc] = useState(true);
   const [page, setPage] = useState(0);
-  const [rowsPerPage, setRowsPerPage] = useState(2); 
+  const [rowsPerPage, setRowsPerPage] = useState(5); 
 
  
   const sortedUsers = [...users].sort((a, b) => {
     return sortedAsc
-      ? a.name.localeCompare(b.name)
-      : b.name.localeCompare(a.name);
+      ? a.name.localeCompare(b.name) : b.name.localeCompare(a.name);
   });
 
   
@@ -46,7 +45,7 @@ export default function SimpleTable() {
 
  
   const handleChangeRowsPerPage = (event) => {
-    setRowsPerPage(parseInt(event.target.value, 10));
+    setRowsPerPage(parseInt(event.target.value));
     setPage(0); 
   };
 
@@ -64,9 +63,9 @@ export default function SimpleTable() {
         <Table>
           <TableHead>
             <TableRow>
-              <TableCell><strong>Name</strong></TableCell>
-              <TableCell><strong>Age</strong></TableCell>
-              <TableCell><strong>Email</strong></TableCell>
+              <TableCell>Name</TableCell>
+              <TableCell>Age</TableCell>
+              <TableCell>Email</TableCell>
             </TableRow>
           </TableHead>
 
